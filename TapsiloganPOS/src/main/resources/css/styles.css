@@ -1,0 +1,206 @@
+/* Global UI theme for TapsiloganPOS */
+
+/* Base */
+.root {
+  -fx-font-family: "Segoe UI", "Inter", "Arial";
+  font-family: "Segoe UI", "Inter", "Arial", sans-serif;
+}
+
+/* Layout backgrounds */
+BorderPane, VBox, HBox, GridPane, TabPane, SplitPane, ToolBar {
+  -fx-background-color: linear-gradient(to bottom, #ffffff, #f6f7fb);
+  background: linear-gradient(to bottom, #ffffff, #f6f7fb);
+  background-color: #f6f7fb;
+}
+
+/* ToolBar (top bars) */
+.tool-bar {
+  -fx-background-color: linear-gradient(to bottom, #8b5cf6, #7c3aed);
+  -fx-padding: 8 12 8 12;
+  -fx-background-insets: 0;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.2, 0, 2);
+  background: linear-gradient(to bottom, #8b5cf6, #7c3aed);
+  background-color: #7c3aed;
+  padding: 8px 12px;
+}
+.tool-bar .label {
+  -fx-text-fill: white;
+  color: #ffffff;
+}
+.tool-bar .button {
+  -fx-background-color: rgba(255,255,255,0.15);
+  -fx-text-fill: white;
+  -fx-background-radius: 6;
+  -fx-padding: 6 12 6 12;
+  background-color: rgba(255,255,255,0.15);
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+.tool-bar .button:hover {
+  -fx-background-color: rgba(255,255,255,0.25);
+  background-color: rgba(255,255,255,0.25);
+}
+
+/* Buttons */
+.button {
+  -fx-background-color: linear-gradient(to bottom, #22c55e, #16a34a);
+  -fx-text-fill: white;
+  -fx-background-radius: 8;
+  -fx-padding: 8 14 8 14;
+  -fx-font-weight: 600;
+  background: linear-gradient(to bottom, #22c55e, #16a34a);
+  background-color: #16a34a;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+}
+.button:hover {
+  -fx-background-color: linear-gradient(to bottom, #34d399, #16a34a);
+  background: linear-gradient(to bottom, #34d399, #16a34a);
+  background-color: #16a34a;
+}
+.button:pressed {
+  -fx-background-color: #15803d;
+  background-color: #15803d;
+}
+
+/* Button variants for Admin Dashboard */
+.button.btn-primary {
+  -fx-background-color: linear-gradient(to bottom, #3b82f6, #2563eb);
+  background: linear-gradient(to bottom, #3b82f6, #2563eb);
+  background-color: #2563eb;
+}
+.button.btn-secondary {
+  -fx-background-color: linear-gradient(to bottom, #9ca3af, #6b7280);
+  background: linear-gradient(to bottom, #9ca3af, #6b7280);
+  background-color: #6b7280;
+}
+.button.btn-success {
+  -fx-background-color: linear-gradient(to bottom, #22c55e, #16a34a);
+  background: linear-gradient(to bottom, #22c55e, #16a34a);
+  background-color: #16a34a;
+}
+.button.btn-danger {
+  -fx-background-color: linear-gradient(to bottom, #ef4444, #dc2626);
+  background: linear-gradient(to bottom, #ef4444, #dc2626);
+  background-color: #dc2626;
+}
+.button.btn-accent {
+  -fx-background-color: linear-gradient(to bottom, #f59e0b, #d97706);
+  background: linear-gradient(to bottom, #f59e0b, #d97706);
+  background-color: #d97706;
+}
+
+/* Secondary buttons (use "cancel" text as heuristic) */
+.button[text~="Logout"], .button[text~="Remove"], .button[text~="Cancel"] {
+  -fx-background-color: linear-gradient(to bottom, #ef4444, #dc2626);
+  background: linear-gradient(to bottom, #ef4444, #dc2626);
+  background-color: #dc2626;
+}
+.button[text~="Logout"]:hover, .button[text~="Remove"]:hover, .button[text~="Cancel"]:hover {
+  -fx-background-color: linear-gradient(to bottom, #f87171, #dc2626);
+  background: linear-gradient(to bottom, #f87171, #dc2626);
+  background-color: #dc2626;
+}
+
+/* Inputs */
+.text-field, .password-field {
+  -fx-background-color: white;
+  -fx-background-radius: 8;
+  -fx-border-color: #e5e7eb;
+  -fx-border-radius: 8;
+  -fx-padding: 8 10 8 10;
+  background-color: #ffffff;
+  border-color: #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+.text-field:focused, .password-field:focused {
+  -fx-border-color: #7c3aed;
+  -fx-effect: dropshadow(gaussian, rgba(124,58,237,0.25), 8, 0.3, 0, 0);
+  border-color: #7c3aed;
+}
+
+/* Labels */
+.label {
+  -fx-text-fill: #111827;
+  color: #111827;
+}
+
+/* Headings (heuristic by inline bold in FXML already) */
+
+/* TabPane */
+.tab-pane .tab-header-area {
+  -fx-background-color: transparent;
+  background-color: transparent;
+}
+.tab-pane .tab-header-area .tab-header-background {
+  -fx-background-color: transparent;
+  background-color: transparent;
+}
+.tab-pane .tab {
+  -fx-background-radius: 8 8 0 0;
+  -fx-background-insets: 0;
+  border-radius: 8px 8px 0 0;
+}
+.tab-pane .tab:selected {
+  -fx-background-color: linear-gradient(to bottom, #ede9fe, #e9d5ff);
+  background: linear-gradient(to bottom, #ede9fe, #e9d5ff);
+  background-color: #e9d5ff;
+}
+.tab-pane .tab-label {
+  -fx-text-fill: #5b21b6;
+  -fx-font-weight: 600;
+  color: #5b21b6;
+  font-weight: 600;
+}
+
+/* TableView */
+.table-view {
+  -fx-background-color: white;
+  -fx-background-radius: 8;
+  -fx-padding: 6;
+  -fx-border-color: #e5e7eb;
+  -fx-border-radius: 8;
+  background-color: #ffffff;
+  border-color: #e5e7eb;
+  border-radius: 8px;
+  padding: 6px;
+}
+.table-view .column-header-background {
+  -fx-background-color: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
+  -fx-background-radius: 8 8 0 0;
+  background: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
+  background-color: #e5e7eb;
+}
+.table-view .column-header, .table-view .filler {
+  -fx-size: 32px;
+  size: 32px;
+  height: 32px;
+}
+.table-view .table-row-cell:filled:selected, .table-view .table-cell:filled:selected {
+  -fx-background-color: #ede9fe;
+  background-color: #ede9fe;
+}
+
+/* SplitPane divider */
+.split-pane:horizontal > .split-pane-divider {
+  -fx-background-color: #e5e7eb;
+  background-color: #e5e7eb;
+}
+
+/* Status labels (heuristic by fx:id) */
+#statusLabel, #foodStatusLabel, #drinkStatusLabel {
+  -fx-text-fill: #6b7280;
+  color: #6b7280;
+}
+
+/* Total amount highlight */
+#totalLabel {
+  -fx-text-fill: #16a34a;
+  -fx-font-weight: 700;
+  color: #16a34a;
+  font-weight: 700;
+}

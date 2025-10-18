@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminController">
+  <top>
+    <ToolBar>
+      <Label text="Admin Dashboard" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+      <Button text="Add Ingredient" onAction="#onAddIngredient" styleClass="btn-success"/>
+      <Button text="Remove Ingredient" onAction="#onRemoveIngredient" styleClass="btn-danger"/>
+      <Button text="Add Drink" onAction="#onAddDrink" styleClass="btn-success"/>
+      <Button text="Remove Drink" onAction="#onRemoveDrink" styleClass="btn-danger"/>
+      <Separator orientation="VERTICAL"/>
+      <Button text="Add Food" onAction="#onAddFood" styleClass="btn-success"/>
+      <Button text="Remove Food" onAction="#onRemoveFood" styleClass="btn-danger"/>
+      <Button text="Save All" onAction="#onSaveAll" styleClass="btn-primary"/>
+      <Button text="Refresh" onAction="#onRefresh" styleClass="btn-secondary"/>
+      <Button text="View Receipt" onAction="#onViewReceipt" styleClass="btn-accent"/>
+      <Button text="Logout" onAction="#onLogout" styleClass="btn-danger"/>
+    </ToolBar>
+  </top>
+  <center>
+    <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE">
+      <Tab text="Ingredients">
+        <VBox spacing="8">
+          <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+          </padding>
+          <TableView fx:id="ingredientsTable" prefHeight="400">
+            <columns>
+              <TableColumn text="Name" fx:id="colIngName"/>
+              <TableColumn text="Unit" fx:id="colIngUnit"/>
+              <TableColumn text="Quantity" fx:id="colIngQty"/>
+            </columns>
+          </TableView>
+        </VBox>
+      </Tab>
+      <Tab text="Drinks">
+        <VBox spacing="8">
+          <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+          </padding>
+          <TableView fx:id="drinksTable" prefHeight="400">
+            <columns>
+              <TableColumn text="Name" fx:id="colDrinkName"/>
+              <TableColumn text="Price" fx:id="colDrinkPrice"/>
+              <TableColumn text="Stock" fx:id="colDrinkStock"/>
+            </columns>
+          </TableView>
+        </VBox>
+      </Tab>
+      <Tab text="Menu">
+        <VBox spacing="8">
+          <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+          </padding>
+          <TableView fx:id="foodsTable" prefHeight="400">
+            <columns>
+              <TableColumn text="Name" fx:id="colFoodName"/>
+              <TableColumn text="Price" fx:id="colFoodPrice"/>
+              <TableColumn text="Availability" fx:id="colFoodAvail"/>
+            </columns>
+          </TableView>
+        </VBox>
+      </Tab>
+      <Tab text="Sales Reports">
+        <VBox spacing="8">
+          <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+          </padding>
+          <TableView fx:id="salesTable" prefHeight="400">
+            <columns>
+              <TableColumn text="Payment ID" fx:id="colPaymentId"/>
+              <TableColumn text="Order ID" fx:id="colOrderId"/>
+              <TableColumn text="Amount Due" fx:id="colAmountDue"/>
+              <TableColumn text="Timestamp" fx:id="colTimestamp"/>
+            </columns>
+          </TableView>
+        </VBox>
+      </Tab>
+    </TabPane>
+  </center>
+</BorderPane>

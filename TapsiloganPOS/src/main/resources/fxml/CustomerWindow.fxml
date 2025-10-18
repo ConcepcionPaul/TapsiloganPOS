@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerController">
+  <top>
+    <Label text="Customer Ordering" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+  </top>
+  <center>
+    <TabPane fx:id="tabPane">
+      <tabs>
+        <Tab text="Table" closable="false">
+          <content>
+            <VBox spacing="8">
+              <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+              </padding>
+              <Label text="Select a table before ordering"/>
+              <ListView fx:id="tableList" prefHeight="220"/>
+              <HBox spacing="8">
+                <Button text="Select Table" onAction="#onSelectTable"/>
+                <Label fx:id="statusLabel"/>
+              </HBox>
+            </VBox>
+          </content>
+        </Tab>
+        <Tab fx:id="foodTab" text="Food" closable="false" disable="true">
+          <content>
+            <VBox spacing="8">
+              <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+              </padding>
+              <ListView fx:id="foodList" prefHeight="260"/>
+              <HBox spacing="8" alignment="CENTER_LEFT">
+                <TextField fx:id="foodQtyField" promptText="Qty" prefWidth="80"/>
+                <Button text="Add Food" onAction="#onAddFood"/>
+                <Label fx:id="foodStatusLabel"/>
+              </HBox>
+            </VBox>
+          </content>
+        </Tab>
+        <Tab fx:id="drinkTab" text="Drinks" closable="false" disable="true">
+          <content>
+            <VBox spacing="8">
+              <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+              </padding>
+              <ListView fx:id="drinkList" prefHeight="260"/>
+              <HBox spacing="8" alignment="CENTER_LEFT">
+                <TextField fx:id="drinkQtyField" promptText="Qty" prefWidth="80"/>
+                <Button text="Add Drink" onAction="#onAddDrink"/>
+                <Label fx:id="drinkStatusLabel"/>
+              </HBox>
+            </VBox>
+          </content>
+        </Tab>
+        <Tab fx:id="summaryTab" text="Summary" closable="false" disable="true">
+          <content>
+            <VBox spacing="8">
+              <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+              </padding>
+              <Label fx:id="selectedTableLabel" text="Selected Table: -"/>
+              <SplitPane dividerPositions="0.5">
+                <items>
+                  <VBox spacing="6">
+                    <Label text="Foods" style="-fx-font-weight:bold;"/>
+                    <ListView fx:id="selectedFoods" prefHeight="180"/>
+                    <HBox spacing="6">
+                      <Button text="Remove One" onAction="#onRemoveOneFood"/>
+                    </HBox>
+                  </VBox>
+                  <VBox spacing="6">
+                    <Label text="Drinks" style="-fx-font-weight:bold;"/>
+                    <ListView fx:id="selectedDrinks" prefHeight="180"/>
+                    <HBox spacing="6">
+                      <Button text="Remove One" onAction="#onRemoveOneDrink"/>
+                    </HBox>
+                  </VBox>
+                </items>
+              </SplitPane>
+              <HBox spacing="8" alignment="CENTER_LEFT">
+                <Label text="Total:"/>
+                <Label fx:id="totalLabel" text="Php 0.00"/>
+                <Pane HBox.hgrow="ALWAYS"/>
+                <Button text="Place Order" onAction="#onPlaceOrder"/>
+              </HBox>
+            </VBox>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </center>
+</BorderPane>

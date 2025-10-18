@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CashierController">
+  <top><Label text="Cashier - Active Orders" style="-fx-font-size:16px; -fx-font-weight:bold;"/></top>
+  <center>
+    <VBox spacing="8">
+      <padding>
+        <Insets top="10" right="10" bottom="10" left="10" />
+      </padding>
+      <TabPane>
+        <tabs>
+          <Tab text="Active Orders" closable="false">
+            <content>
+              <TableView fx:id="ordersTable" prefHeight="320">
+                <columns>
+                  <TableColumn text="Order ID" fx:id="colOrderId" prefWidth="100"/>
+                  <TableColumn text="Items" fx:id="colItems" prefWidth="200"/>
+                  <TableColumn text="Status" fx:id="colStatus" prefWidth="100"/>
+                </columns>
+              </TableView>
+            </content>
+          </Tab>
+          <Tab text="Menu" closable="false">
+            <content>
+              <TableView fx:id="menuTable" prefHeight="320">
+                <columns>
+                  <TableColumn text="Name" fx:id="colMenuFoodName" prefWidth="180"/>
+                  <TableColumn text="Price" fx:id="colMenuFoodPrice" prefWidth="100"/>
+                  <TableColumn text="Availability" fx:id="colMenuFoodAvail" prefWidth="120"/>
+                </columns>
+              </TableView>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <HBox spacing="8">
+        <Button text="Process Payment" onAction="#onProcessPayment"/>
+        <Button text="Logout" onAction="#onLogout"/>
+      </HBox>
+    </VBox>
+  </center>
+</BorderPane>
