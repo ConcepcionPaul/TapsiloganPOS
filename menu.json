@@ -1,0 +1,21 @@
+[ {
+  "id" : 1,
+  "name" : "Tapsilog",
+  "price" : 75.0,
+  "stock" : 0
+}, {
+  "id" : 2,
+  "name" : "Tosilog",
+  "price" : 75.0,
+  "stock" : 0
+}, {
+  "id" : 3,
+  "name" : "Longsilog",
+  "price" : 75.0,
+  "stock" : 0
+}, {
+  "id" : 6,
+  "name" : "longsi",
+  "price" : 50.0,
+  "stock" : 0
+} ]

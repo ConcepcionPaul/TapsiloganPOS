@@ -1,0 +1,81 @@
+{
+  "ingredients" : {
+    "garlic" : {
+      "name" : "garlic",
+      "unit" : "pcs",
+      "quantity" : 37
+    },
+    "egg" : {
+      "name" : "egg",
+      "unit" : "pcs",
+      "quantity" : 87
+    },
+    "beef" : {
+      "name" : "beef",
+      "unit" : "kg",
+      "quantity" : 24
+    },
+    "rice" : {
+      "name" : "rice",
+      "unit" : "kg",
+      "quantity" : 87
+    },
+    "pork" : {
+      "name" : "pork",
+      "unit" : "kg",
+      "quantity" : 40
+    },
+    "cooking oil" : {
+      "name" : "cooking oil",
+      "unit" : "tbsp",
+      "quantity" : 935
+    },
+    "tocino" : {
+      "name" : "tocino",
+      "unit" : "pcs",
+      "quantity" : 92
+    },
+    "skinless longanisa" : {
+      "name" : "skinless longanisa",
+      "unit" : "pcs",
+      "quantity" : 94
+    },
+    "bawang" : {
+      "name" : "bawang",
+      "unit" : "pcs",
+      "quantity" : 1
+    }
+  },
+  "drinks" : [ {
+    "id" : 4,
+    "name" : "coke",
+    "price" : 25.0,
+    "stock" : 45
+  }, {
+    "id" : 5,
+    "name" : "sprite",
+    "price" : 25.0,
+    "stock" : 43
+  } ],
+  "allItems" : [ {
+    "id" : 1,
+    "name" : "Tapsilog",
+    "price" : 75.0,
+    "stock" : 0
+  }, {
+    "id" : 2,
+    "name" : "Tosilog",
+    "price" : 75.0,
+    "stock" : 0
+  }, {
+    "id" : 3,
+    "name" : "Longsilog",
+    "price" : 75.0,
+    "stock" : 0
+  }, {
+    "id" : 6,
+    "name" : "longsi",
+    "price" : 50.0,
+    "stock" : 0
+  } ]
+}

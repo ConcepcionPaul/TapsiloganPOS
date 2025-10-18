@@ -1,0 +1,155 @@
+[ {
+  "paymentId" : 622169,
+  "orderId" : 516988,
+  "amountDue" : 89.6,
+  "paid" : 200.0,
+  "timestamp" : "2025-10-15 17:48:42",
+  "items" : [ {
+    "name" : "Tosilog",
+    "quantity" : 1,
+    "unitPrice" : 75.0,
+    "lineTotal" : 75.0
+  }, {
+    "name" : "sprite",
+    "quantity" : 1,
+    "unitPrice" : 25.0,
+    "lineTotal" : 25.0
+  } ],
+  "subtotal" : 100.0,
+  "vat" : 9.6,
+  "discount" : 20.0,
+  "change" : 110.4,
+  "receipt" : "================================\n       PAYMENT RECEIPT\n================================\nPayment ID: 622169\nDate/Time: 2025-10-15 17:48:42\nOrder ID: 516988\n--------------------------------\nTosilog x1  Php 75.00\nsprite x1  Php 25.00\n--------------------------------\nSubtotal: Php 100.00\nDiscount: -Php 20.00\nVAT (12%): Php 9.60\nTotal Due: Php 89.60\nAmount Paid: Php 200.00\nChange: Php 110.40\n================================\n"
+}, {
+  "paymentId" : 872226,
+  "orderId" : 139530,
+  "amountDue" : 89.6,
+  "paid" : 300.0,
+  "timestamp" : "2025-10-15 17:48:52",
+  "items" : [ {
+    "name" : "Tapsilog",
+    "quantity" : 1,
+    "unitPrice" : 75.0,
+    "lineTotal" : 75.0
+  }, {
+    "name" : "sprite",
+    "quantity" : 1,
+    "unitPrice" : 25.0,
+    "lineTotal" : 25.0
+  } ],
+  "subtotal" : 100.0,
+  "vat" : 9.6,
+  "discount" : 20.0,
+  "change" : 210.4,
+  "receipt" : "================================\n       PAYMENT RECEIPT\n================================\nPayment ID: 872226\nDate/Time: 2025-10-15 17:48:52\nOrder ID: 139530\n--------------------------------\nTapsilog x1  Php 75.00\nsprite x1  Php 25.00\n--------------------------------\nSubtotal: Php 100.00\nDiscount: -Php 20.00\nVAT (12%): Php 9.60\nTotal Due: Php 89.60\nAmount Paid: Php 300.00\nChange: Php 210.40\n================================\n"
+}, {
+  "paymentId" : 548318,
+  "orderId" : 462025,
+  "amountDue" : 89.6,
+  "paid" : 500.0,
+  "timestamp" : "2025-10-15 17:56:49",
+  "items" : [ {
+    "name" : "coke",
+    "quantity" : 1,
+    "unitPrice" : 25.0,
+    "lineTotal" : 25.0
+  }, {
+    "name" : "Longsilog",
+    "quantity" : 1,
+    "unitPrice" : 75.0,
+    "lineTotal" : 75.0
+  } ],
+  "subtotal" : 100.0,
+  "vat" : 9.6,
+  "discount" : 20.0,
+  "change" : 410.4,
+  "receipt" : "================================\n       PAYMENT RECEIPT\n================================\nPayment ID: 548318\nDate/Time: 2025-10-15 17:56:49\nOrder ID: 462025\n--------------------------------\ncoke x1  Php 25.00\nLongsilog x1  Php 75.00\n--------------------------------\nSubtotal: Php 100.00\nDiscount: -Php 20.00\nVAT (12%): Php 9.60\nTotal Due: Php 89.60\nAmount Paid: Php 500.00\nChange: Php 410.40\n================================\n"
+}, {
+  "paymentId" : 429434,
+  "orderId" : 390959,
+  "amountDue" : 89.6,
+  "paid" : 222.0,
+  "timestamp" : "2025-10-15 18:04:28",
+  "items" : [ {
+    "name" : "coke",
+    "quantity" : 1,
+    "unitPrice" : 25.0,
+    "lineTotal" : 25.0
+  }, {
+    "name" : "Longsilog",
+    "quantity" : 1,
+    "unitPrice" : 75.0,
+    "lineTotal" : 75.0
+  } ],
+  "subtotal" : 100.0,
+  "vat" : 9.6,
+  "discount" : 20.0,
+  "change" : 132.4,
+  "receipt" : "================================\n       PAYMENT RECEIPT\n================================\nPayment ID: 429434\nDate/Time: 2025-10-15 18:04:28\nOrder ID: 390959\n--------------------------------\ncoke x1  Php 25.00\nLongsilog x1  Php 75.00\n--------------------------------\nSubtotal: Php 100.00\nDiscount: -Php 20.00\nVAT (12%): Php 9.60\nTotal Due: Php 89.60\nAmount Paid: Php 222.00\nChange: Php 132.40\n================================\n"
+}, {
+  "paymentId" : 271868,
+  "orderId" : 853948,
+  "amountDue" : 89.6,
+  "paid" : 500.0,
+  "timestamp" : "2025-10-18 08:28:53",
+  "items" : [ {
+    "name" : "Tosilog",
+    "quantity" : 1,
+    "unitPrice" : 75.0,
+    "lineTotal" : 75.0
+  }, {
+    "name" : "coke",
+    "quantity" : 1,
+    "unitPrice" : 25.0,
+    "lineTotal" : 25.0
+  } ],
+  "subtotal" : 100.0,
+  "vat" : 9.6,
+  "discount" : 20.0,
+  "change" : 410.4,
+  "receipt" : "================================\n       PAYMENT RECEIPT\n================================\nPayment ID: 271868\nDate/Time: 2025-10-18 08:28:53\nOrder ID: 853948\n--------------------------------\nTosilog x1  Php 75.00\ncoke x1  Php 25.00\n--------------------------------\nSubtotal: Php 100.00\nDiscount: -Php 20.00\nVAT (12%): Php 9.60\nTotal Due: Php 89.60\nAmount Paid: Php 500.00\nChange: Php 410.40\n================================\n"
+}, {
+  "paymentId" : 955174,
+  "orderId" : 353497,
+  "amountDue" : 89.6,
+  "paid" : 100.0,
+  "timestamp" : "2025-10-18 08:31:38",
+  "items" : [ {
+    "name" : "Tapsilog",
+    "quantity" : 1,
+    "unitPrice" : 75.0,
+    "lineTotal" : 75.0
+  }, {
+    "name" : "sprite",
+    "quantity" : 1,
+    "unitPrice" : 25.0,
+    "lineTotal" : 25.0
+  } ],
+  "subtotal" : 100.0,
+  "vat" : 9.6,
+  "discount" : 20.0,
+  "change" : 10.400000000000006,
+  "receipt" : "================================\n       PAYMENT RECEIPT\n================================\nPayment ID: 955174\nDate/Time: 2025-10-18 08:31:38\nOrder ID: 353497\n--------------------------------\nTapsilog x1  Php 75.00\nsprite x1  Php 25.00\n--------------------------------\nSubtotal: Php 100.00\nDiscount: -Php 20.00\nVAT (12%): Php 9.60\nTotal Due: Php 89.60\nAmount Paid: Php 100.00\nChange: Php 10.40\n================================\n"
+}, {
+  "paymentId" : 977286,
+  "orderId" : 450491,
+  "amountDue" : 89.6,
+  "paid" : 100.0,
+  "timestamp" : "2025-10-18 09:18:11",
+  "items" : [ {
+    "name" : "Tapsilog",
+    "quantity" : 1,
+    "unitPrice" : 75.0,
+    "lineTotal" : 75.0
+  }, {
+    "name" : "sprite",
+    "quantity" : 1,
+    "unitPrice" : 25.0,
+    "lineTotal" : 25.0
+  } ],
+  "subtotal" : 100.0,
+  "vat" : 9.6,
+  "discount" : 20.0,
+  "change" : 10.400000000000006,
+  "receipt" : "================================\n       PAYMENT RECEIPT\n================================\nPayment ID: 977286\nDate/Time: 2025-10-18 09:18:11\nOrder ID: 450491\n--------------------------------\nTapsilog x1  Php 75.00\nsprite x1  Php 25.00\n--------------------------------\nSubtotal: Php 100.00\nDiscount: -Php 20.00\nVAT (12%): Php 9.60\nTotal Due: Php 89.60\nAmount Paid: Php 100.00\nChange: Php 10.40\n================================\n"
+} ]
