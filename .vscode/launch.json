@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "JavaFXMain",
+      "request": "launch",
+      "mainClass": "JavaFXMain",
+      "projectName": "TapsiloganPOS_Persistent",
+      "vmArgs": "--module-path \"C:/Users/joydi/.m2/repository/org/openjfx/javafx-controls/17/javafx-controls-17-win.jar;C:/Users/joydi/.m2/repository/org/openjfx/javafx-fxml/17/javafx-fxml-17-win.jar;C:/Users/joydi/.m2/repository/org/openjfx/javafx-base/17/javafx-base-17-win.jar;C:/Users/joydi/.m2/repository/org/openjfx/javafx-graphics/17/javafx-graphics-17-win.jar\" --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.graphics --add-opens java.base/java.lang=ALL-UNNAMED"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "TapsiloganPOS_Persistent"
+    }
+  ]
+}
